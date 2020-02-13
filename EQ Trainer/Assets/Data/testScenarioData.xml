@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Testing>
+  <Scenarios>
+    <Scenario category="empathy">
+      <text>This is a test</text>
+      <Options>
+        <option>
+          <text>Option 1</text>
+          <score>1</score>
+        </option>
+        <option>
+          <text>Option 2</text>
+          <score>2</score>
+        </option>
+        <option>
+          <text>Option 3</text>
+          <score>3</score>
+        </option>
+        <option>
+          <text>Option 4</text>
+          <score>4</score>
+        </option>
+        <option>
+          <text>Option 5</text>
+          <score>5</score>
+        </option>
+      </Options>
+    </Scenario>
+  </Scenarios>
+</Testing>
