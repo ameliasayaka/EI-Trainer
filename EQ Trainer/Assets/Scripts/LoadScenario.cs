@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System.Xml;
@@ -31,13 +31,16 @@ public class Scenario
 
     [XmlArray("Options")]
     [XmlArrayItem("option")]
-    public List<Option> Options = new List<Option>();
+    public Option[] Options;
 
 
 }
+
+
 public class Option
 {
-    public string text;
+   [XmlElement("optionText")]
+    public string optionText;
+    
     public int score;
 }
-

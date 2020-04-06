@@ -1,27 +1,27 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Testing>
   <Scenarios>
     <Scenario category="empathy">
       <text>This is a test</text>
       <Options>
         <option>
-          <text>Option 1</text>
+          <optionText>Option 1</optionText>
           <score>1</score>
         </option>
         <option>
-          <text>Option 2</text>
+          <optionText>Option 2</optionText>
           <score>2</score>
         </option>
         <option>
-          <text>Option 3</text>
+          <optionText>Option 3</optionText>
           <score>3</score>
         </option>
         <option>
-          <text>Option 4</text>
+          <optionText>Option 4</optionText>
           <score>4</score>
         </option>
         <option>
-          <text>Option 5</text>
+          <optionText>Option 5</optionText>
           <score>5</score>
         </option>
       </Options>

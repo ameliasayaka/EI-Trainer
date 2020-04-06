@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - ScenarioText
+  - GameManager
   layers:
   - Default
   - TransparentFX
