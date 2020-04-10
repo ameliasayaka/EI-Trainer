@@ -20,7 +20,8 @@ public class UIFadeScript : MonoBehaviour
             //enable canvas before fade in
             
             canvasGroup.interactable = true;
-            Debug.Log(canvasGroup);
+            canvasGroup.blocksRaycasts = true;
+            //Debug.Log(canvasGroup);
             StartCoroutine(DoFade(canvasGroup, canvasGroup.alpha, 1));
         }
         else if (isFadeIn == false)
@@ -28,7 +29,7 @@ public class UIFadeScript : MonoBehaviour
             StartCoroutine(DoFade(canvasGroup, canvasGroup.alpha, 0));
 
             //disable canvas
-           // canvasGroup.interactable = false;
+            canvasGroup.blocksRaycasts = false;
         }
         
     }
@@ -37,18 +38,15 @@ public class UIFadeScript : MonoBehaviour
     {
         float count = 0f;
         //Debug.Log("Fading");
-        Debug.Log(canvas.alpha);
+        //Debug.Log(canvas.alpha);
         while (count < fadeDuration)
         {
             count += Time.deltaTime;
             canvas.alpha = Mathf.Lerp(start, end, count / fadeDuration);
-            Debug.Log(canvas.alpha);
+            //Debug.Log(canvas.alpha);
             yield return null;
         }
-        //if (canvas.alpha == 0.0f)
-        //{
-        //    canvas.interactable = false;
-        //}
+
         yield return null;
     }
 }

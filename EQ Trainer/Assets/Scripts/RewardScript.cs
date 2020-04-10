@@ -4,10 +4,9 @@ using UnityEngine;
 
 public class RewardScript : MonoBehaviour
 {
-    public int score;
-
+    public int Score { get; set; }
     void AddScore()
     {
-        PlayerData.RewardPoints += score;
+        GameObject.FindGameObjectWithTag("DataHolder").GetComponent<DataHolder>().player.RewardPoints += Score;
     }
 }

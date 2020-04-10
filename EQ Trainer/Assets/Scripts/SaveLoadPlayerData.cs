@@ -5,27 +5,40 @@ using System.Runtime.Serialization;
 using System.IO;
 using UnityEngine.Windows;
 using System.Runtime.Serialization.Formatters.Binary;
+using System;
 
-public static class SaveLoadPlayerData
+public class SaveLoadPlayerData
 {
 
-    private static PlayerData playerData;
+    //public static PlayerData playerData;
+    //public GameObject DataHolder;
 
-    public static void SaveData()
+    public static void SaveData(PlayerData player)
     {
         BinaryFormatter bFormatter = new BinaryFormatter();
         FileStream file = System.IO.File.Create(Application.persistentDataPath + "/playerData.pd");
-        bFormatter.Serialize(file, playerData);
+        
+
+        
+        bFormatter.Serialize(file, player);
         file.Close();
+
+
+       // Debug.Log(player.playerName);
+        
     }
-    public static void LoadData()
+    public static PlayerData LoadData(PlayerData playerData)
     {
-        if (System.IO.File.Exists(Application.persistentDataPath + "/savedGames.gd"))
+        if (System.IO.File.Exists(Application.persistentDataPath + "/playerData.pd"))
         {
+            //playerData = new PlayerData();
             BinaryFormatter bFormatter = new BinaryFormatter();
             FileStream file = System.IO.File.Open(Application.persistentDataPath + "/playerData.pd", FileMode.Open);
-            SaveLoadPlayerData.playerData = (PlayerData)bFormatter.Deserialize(file);
+            playerData = (PlayerData)bFormatter.Deserialize(file);
             file.Close();
+
+            return playerData;
         }
+        return null;
     }
 }

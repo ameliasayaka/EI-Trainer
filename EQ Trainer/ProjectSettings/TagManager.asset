@@ -6,6 +6,7 @@ TagManager:
   tags:
   - ScenarioText
   - GameManager
+  - DataHolder
   layers:
   - Default
   - TransparentFX
@@ -15,8 +16,8 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
+  - OptionCanvas
+  - MainCanvas
   - 
   - 
   - 
@@ -42,4 +43,7 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: New Layer
+    uniqueID: 3311920269
     locked: 0

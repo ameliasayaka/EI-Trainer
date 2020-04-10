@@ -3,17 +3,26 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [System.Serializable]
-public class PlayerData : MonoBehaviour
+public class PlayerData /*: MonoBehaviour*/
 {
-    static public string PlayerName { get; set; }
-    static List<PlayerScore> playerScoreList;
-    static List<string> playerGoals;
-    static private int rewardPoints;
-    static private float volume;
+    public string playerName;
+    public List<PlayerScore> playerScoreList;
+    public string[] playerGoals;
+    public int rewardPoints;
+    public float volume;
 
+    //Constructors
+    public PlayerData()
+    {
+        playerName = null;
+        playerGoals = new string[5];
+        rewardPoints = 0;
+        playerScoreList = new List<PlayerScore>();
+        volume = 1f;
+    }
 
     //Properties
-    static public int RewardPoints
+    public int RewardPoints
     {
         get { return rewardPoints; }
         set 
@@ -25,7 +34,7 @@ public class PlayerData : MonoBehaviour
         }
     }
 
-    static public float Volume
+     public float Volume
     {
         get { return volume; }
         set
