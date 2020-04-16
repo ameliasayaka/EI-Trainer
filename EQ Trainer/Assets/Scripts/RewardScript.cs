@@ -5,8 +5,13 @@ using UnityEngine;
 public class RewardScript : MonoBehaviour
 {
     public int Score { get; set; }
-    void AddScore()
+
+   public void AddReward()
     {
-        GameObject.FindGameObjectWithTag("DataHolder").GetComponent<DataHolder>().player.RewardPoints += Score;
+        if (Score >= 0)
+        { GameObject.FindGameObjectWithTag("DataHolder").GetComponent<DataHolder>().player.RewardPoints += Score; }
+        
     }
+
+
 }

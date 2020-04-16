@@ -1,0 +1,378 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WordDatabase>
+  <Words>
+    <!-- Words Related to Anger -->
+    <Word category ="Anger">
+      <name>Apoplectic</name>
+      <definition>extremely enraged</definition>
+    </Word>
+    <Word category ="Anger">
+      <name>Ballistic</name>
+      <definition>extremely and usually suddenly excited, upset, or angry</definition>
+    </Word>
+    <Word category ="Anger">
+      <name>Choleric</name>
+      <definition>easily moved to often unreasonable or excessive anger</definition>
+    </Word>
+    <Word category ="Anger">
+      <name>Enraged</name>
+      <definition>to fill with rage</definition>
+    </Word>
+    <Word category ="Anger">
+      <name>Fuming</name>
+      <definition>a state of excited irritation or anger</definition>
+    </Word>
+    <Word category ="Anger">
+      <name>Furious</name>
+      <definition>exhibiting or goaded by anger</definition>
+    </Word>
+    <Word category ="Anger">
+      <name>Incensed</name>
+      <definition>extreme anger or indignation</definition>
+    </Word>
+    <Word category ="Anger">
+      <name>Indignant</name>
+      <definition>feeling or showing anger because of something unjust or unworthy</definition>
+    </Word>
+    <Word category ="Anger">
+      <name>Inflamed</name>
+      <definition>excessive or uncontrollable action or feeling</definition>
+    </Word>
+    <Word category ="Anger">
+      <name>Infuriated</name>
+      <definition>furiously angry</definition>
+    </Word>
+    <Word category ="Anger">
+      <name>Livid</name>
+      <definition>very angry</definition>
+    </Word>
+    <Word category ="Anger">
+      <name>Outraged</name>
+      <definition>anger and resentment aroused by injury or insult</definition>
+    </Word>
+    <Word category ="Anger">
+      <name>Rabid</name>
+      <definition>extremely violent</definition>
+    </Word>
+    <Word category ="Anger">
+      <name>Rankled</name>
+      <definition>anger, irritation, or deep bitterness</definition>
+    </Word>
+    <Word category ="Anger">
+      <name>Riled</name>
+      <definition>agitated and angry</definition>
+    </Word>
+    <Word category ="Anger">
+      <name>Roiled</name>
+      <definition>be in a state of turbulence or agitation</definition>
+    </Word>
+    <Word category ="Anger">
+      <name>Sore</name>
+      <definition>emotional pain or distress</definition>
+    </Word>
+    <Word category ="Anger">
+      <name>Wrath</name>
+      <definition>strong vengeful anger or indignation</definition>
+    </Word>
+    <!-- Words Related to Disgust-->
+    <Word category ="Disgust">
+      <name>Revolted</name>
+      <definition>to experience disgust or shock</definition>
+    </Word>
+    <Word category ="Disgust">
+      <name>Sickens</name>
+      <definition>to cause revulsion in</definition>
+    </Word>
+    <Word category ="Disgust">
+      <name>Repugnance</name>
+      <definition>strong dislike, distaste, or antagonism</definition>
+    </Word>
+    <Word category ="Disgust">
+      <name>Nauseated</name>
+      <definition>to feel disgust</definition>
+    </Word>
+    <Word category ="Disgust">
+      <name>Repelled</name>
+      <definition>to feel aversion or disgust</definition>
+    </Word>
+    <Word category ="Disgust">
+      <name>Repulsed</name>
+      <definition>a feeling of aversion</definition>
+    </Word>
+    <!--Words related to Fear-->
+    <Word category ="Fear">
+      <name>Terror</name>
+      <definition>a state of intense or overwhelming fear</definition>
+    </Word>
+    <Word category ="Fear">
+      <name>Aghast</name>
+      <definition>struck with terror, amazement, or horror</definition>
+    </Word>
+    <Word category ="Fear">
+      <name>Alarmed</name>
+      <definition>urgently worried, concerned, or frightened</definition>
+    </Word>
+    <Word category ="Fear">
+      <name>Fearful</name>
+      <definition>full of fear</definition>
+    </Word>
+    <Word category ="Fear">
+      <name>Frightened</name>
+      <definition>feeling fear</definition>
+    </Word>
+    <Word category ="Fear">
+      <name>Horrified</name>
+      <definition>to feel painful and intense fear, dread, or dismay</definition>
+    </Word>
+    <Word category ="Fear">
+      <name>Hysterical</name>
+      <definition>feeling or showing extreme and unrestrained emotion</definition>
+    </Word>
+    <Word category ="Fear">
+      <name>Scared</name>
+      <definition>thrown into or being in a state of fear, fright, or panic</definition>
+    </Word>
+    <Word category ="Fear">
+      <name>Shocked</name>
+      <definition>stricken with sudden mental or emotional disturbance</definition>
+    </Word>
+    <Word category ="Fear">
+      <name>Spooked</name>
+      <definition>to be frightened or frantic</definition>
+    </Word>
+    <Word category ="Fear">
+      <name>Terrified</name>
+      <definition>to be filled with terror</definition>
+    </Word>
+    <Word category ="Fear">
+      <name>Terrorized</name>
+      <definition>to be filled with terror or anxiety</definition>
+    </Word>
+    <!--Words Related to Happy-->
+    <Word category ="Happy">
+      <name>Beaming</name>
+      <definition>smiling with joy</definition>
+    </Word>
+    <Word category ="Happy">
+      <name>Blithe</name>
+      <definition>of a happy lighthearted character or disposition</definition>
+    </Word>
+    <Word category ="Happy">
+      <name>Bouyant</name>
+      <definition>cheerful, capable of floating</definition>
+    </Word>
+    <Word category ="Happy">
+      <name>Cheerful</name>
+      <definition>full of good spirits</definition>
+    </Word>
+     <Word category ="Happy">
+      <name>Gladsome</name>
+      <definition>giving or showing joy</definition>
+    </Word>
+    <Word category ="Happy">
+      <name>Lighthearted</name>
+      <definition>free from care, anxiety, or seriousness</definition>
+    </Word>
+    <Word category ="Happy">
+      <name>Upbeat</name>
+      <definition>cheerful or optimistic</definition>
+    </Word>
+    <Word category ="Happy">
+      <name>Gleeful</name>
+      <definition>full of exultant high-spirited joy</definition>
+    </Word>
+    <Word category ="Happy">
+      <name>Jocund</name>
+      <definition>marked by or suggestive of high spirits and lively mirthfulness</definition>
+    </Word>
+    <Word category ="Happy">
+      <name>Jolly</name>
+      <definition>full of high spirits</definition>
+    </Word>
+    <Word category ="Happy">
+      <name>Jovial</name>
+      <definition>characterized by good-humored cheerfulness and conviviality</definition>
+    </Word>
+    <Word category ="Happy">
+      <name>Merry</name>
+      <definition>full of gaiety or high spirits</definition>
+    </Word>
+    <Word category ="Happy">
+      <name>Mirthful</name>
+      <definition>gladness or gaiety as shown by or accompanied with laughter</definition>
+    </Word>
+    <Word category ="Happy">
+      <name>Ecstatic</name>
+      <definition>a state of overwhelming emotion</definition>
+    </Word>
+    <Word category ="Happy">
+      <name>Elated</name>
+      <definition>marked by high spirits</definition>
+    </Word>
+    <Word category ="Happy">
+      <name>Enraptured</name>
+      <definition>filled with delight</definition>
+    </Word>
+    <Word category ="Happy">
+      <name>Euphoric</name>
+      <definition>marked by a feeling of great happiness and excitement</definition>
+    </Word>
+    <Word category ="Happy">
+      <name>Exhilarated</name>
+      <definition>very happy and excited or elated</definition>
+    </Word>
+    <Word category ="Happy">
+      <name>Rapture</name>
+      <definition>an expression or manifestation of ecstasy or passion</definition>
+    </Word>
+    <Word category ="Happy">
+      <name>Rapture</name>
+      <definition>extravagantly emotional</definition>
+    </Word>
+    <Word category ="Happy">
+      <name>Exhuberant</name>
+      <definition>joyously unrestrained and enthusiastic</definition>
+    </Word>
+    <Word category ="Happy">
+      <name>Exultant</name>
+      <definition>filled with or expressing great joy or triumph</definition>
+    </Word>
+    <Word category ="Happy">
+      <name>Jubilant</name>
+      <definition>feeling or expressing great joy</definition>
+    </Word>
+    <Word category ="Happy">
+      <name>Sanguine</name>
+      <definition>marked by eager hopefulness</definition>
+    </Word>
+    <!--Words related to Sad-->
+    <Word category ="Sad">
+      <name>Blue</name>
+      <definition>low in spirits</definition>
+    </Word>
+    <Word category ="Sad">
+      <name>Brokenhearted</name>
+      <definition>overcome by grief or despair</definition>
+    </Word>
+    <Word category ="Sad">
+      <name>Crestfallen</name>
+      <definition>feeling shame or humiliation</definition>
+    </Word>
+    <Word category ="Sad">
+      <name>Dejected</name>
+      <definition>low in spirits</definition>
+    </Word>
+    <Word category ="Sad">
+      <name>Despondent</name>
+      <definition>feeling or showing extreme discouragement</definition>
+    </Word>
+    <Word category ="Sad">
+      <name>Disconsulate</name>
+      <definition>cheerless</definition>
+    </Word>
+    <Word category ="Sad">
+      <name>Doleful</name>
+      <definition>full of grief</definition>
+    </Word>
+    <Word category ="Sad">
+      <name>Downcast</name>
+      <definition>low in spirit</definition>
+    </Word>
+    <Word category ="Sad">
+      <name>Downhearted</name>
+      <definition>downcast, dejected</definition>
+    </Word>
+    <Word category ="Sad">
+      <name>Forlorn</name>
+      <definition>sad and lonely because of isolation or desertion</definition>
+    </Word>
+    <Word category ="Sad">
+      <name>Gloomy</name>
+      <definition>lacking in promise or hopefulness</definition>
+    </Word>
+    <Word category ="Sad">
+      <name>Glum</name>
+      <definition>broodingly morose</definition>
+    </Word>
+    <Word category ="Sad">
+      <name>Inconsolable</name>
+      <definition>incapable of being consoled</definition>
+    </Word>
+    <Word category ="Sad">
+      <name>Melancholic</name>
+      <definition>depression of spirits</definition>
+    </Word>
+    <Word category ="Sad">
+      <name>Miserable</name>
+      <definition>being in a pitiable state of distress or unhappiness</definition>
+    </Word>
+    <Word category ="Sad">
+      <name>Mournful</name>
+      <definition>expressing sorrow</definition>
+    </Word>
+    <Word category ="Sad">
+      <name>Sorrowful</name>
+      <definition>full of or marked by deep distress, sadness, or regret</definition>
+    </Word>
+    <Word category ="Sad">
+      <name>Woebegone</name>
+      <definition>strongly affected with grief, regret, or distress</definition>
+    </Word>
+    <Word category ="Sad">
+      <name>Wretched</name>
+      <definition>deeply afflicted, dejected, or distressed in body or mind</definition>
+    </Word>
+    <!--Words for Surprise-->
+    <Word category ="Surprise">
+      <name>Startled</name>
+      <definition>a sudden mild shock</definition>
+    </Word>
+    <Word category ="Surprise">
+      <name>Amazed</name>
+      <definition>feeling or showing great surprise or wonder</definition>
+    </Word>    <Word category ="Surprise">
+      <name>Astonished</name>
+      <definition>feeling or showing great surprise or wonder</definition>
+    </Word>
+    <Word category ="Surprise">
+      <name>Astounded</name>
+      <definition>feeling or showing great surprise or wonder</definition>
+    </Word>
+    <Word category ="Surprise">
+      <name>Awestruck</name>
+      <definition>filled with an emotion variously combining dread, veneration, and wonder that is inspired by authority, the sacred or sublime</definition>
+    </Word>
+    <Word category ="Surprise">
+      <name>Dumbfounded</name>
+      <definition>to be thrown into confusion briefly and usually with astonishment</definition>
+    </Word>
+    <Word category ="Surprise">
+      <name>Flabbergasted</name>
+      <definition>feeling or showing intense shock, surprise, or wonder</definition>
+    </Word>
+    <Word category ="Surprise">
+      <name>Marvel</name>
+      <definition>to become filled with surprise, wonder, or amazed curiosity</definition>
+    </Word>
+    <Word category ="Surprise">
+      <name>Openmouthed</name>
+      <definition>struck with amazement or wonder</definition>
+    </Word>
+    <Word category ="Surprise">
+      <name>Bemused</name>
+      <definition>marked by confusion or bewilderment</definition>
+    </Word>
+    <Word category ="Surprise">
+      <name>Bewildered</name>
+      <definition>deeply or utterly confused or perplexed</definition>
+    </Word>
+    <Word category ="Surprise">
+      <name>Stunned</name>
+      <definition>to be overcome with paralyzing astonishment or disbelief</definition>
+    </Word>
+    <Word category ="Surprise">
+      <name>Stupefied</name>
+      <definition>to be filled with bewilderment or wonder</definition>
+    </Word>
+  </Words>
+</WordDatabase>

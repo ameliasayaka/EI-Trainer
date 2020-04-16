@@ -255,7 +255,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2f789490c0544d4483ecc5df68833c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  score: 0
 --- !u!1 &350816874
 GameObject:
   m_ObjectHideFlags: 0
@@ -391,7 +390,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2f789490c0544d4483ecc5df68833c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  score: 0
 --- !u!1 &425910166
 GameObject:
   m_ObjectHideFlags: 0
@@ -755,7 +753,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2f789490c0544d4483ecc5df68833c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  score: 0
 --- !u!1 &973934759
 GameObject:
   m_ObjectHideFlags: 0
@@ -1179,7 +1176,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1104096370}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1808329045}
+        m_MethodName: AddScore
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1104096370
@@ -1232,7 +1240,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2f789490c0544d4483ecc5df68833c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  score: 0
 --- !u!1 &1292001725
 GameObject:
   m_ObjectHideFlags: 0
@@ -1368,7 +1375,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2f789490c0544d4483ecc5df68833c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  score: 0
 --- !u!1 &1303359969
 GameObject:
   m_ObjectHideFlags: 0

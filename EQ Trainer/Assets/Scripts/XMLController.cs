@@ -16,7 +16,7 @@ public class XMLController : MonoBehaviour
 
     }
 
-    public static Scenarios LoadXML(string path)
+    public static void LoadXML(string path)
     {
         Scenarios scenarios = new Scenarios();
 
@@ -24,7 +24,7 @@ public class XMLController : MonoBehaviour
         StreamReader reader = new StreamReader(path);
         Scenarios deserialized = (Scenarios)serializer.Deserialize(reader.BaseStream);
         reader.Close();
-        return deserialized;
+        //return deserialized;
 
         
     }

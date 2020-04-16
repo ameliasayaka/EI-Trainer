@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 [System.Serializable]
 public class PlayerData /*: MonoBehaviour*/
@@ -10,6 +11,7 @@ public class PlayerData /*: MonoBehaviour*/
     public string[] playerGoals;
     public int rewardPoints;
     public float volume;
+    public DateTime loginDate;
 
     //Constructors
     public PlayerData()
@@ -19,6 +21,7 @@ public class PlayerData /*: MonoBehaviour*/
         rewardPoints = 0;
         playerScoreList = new List<PlayerScore>();
         volume = 1f;
+        loginDate = DateTime.Now;
     }
 
     //Properties

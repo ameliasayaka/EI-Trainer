@@ -30,6 +30,7 @@ public class UIFadeScript : MonoBehaviour
 
             //disable canvas
             canvasGroup.blocksRaycasts = false;
+            canvasGroup.interactable = false;
         }
         
     }
