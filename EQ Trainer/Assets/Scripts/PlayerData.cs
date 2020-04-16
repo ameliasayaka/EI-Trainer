@@ -12,6 +12,7 @@ public class PlayerData /*: MonoBehaviour*/
     public int rewardPoints;
     public float volume;
     public DateTime loginDate;
+    public bool[] isDailyTaskComplete;
 
     //Constructors
     public PlayerData()
@@ -22,6 +23,8 @@ public class PlayerData /*: MonoBehaviour*/
         playerScoreList = new List<PlayerScore>();
         volume = 1f;
         loginDate = DateTime.Now;
+        isDailyTaskComplete = new bool[] { false };
+        
     }
 
     //Properties

@@ -8,7 +8,7 @@ using UnityEngine.UI;
 public class UIFadeScript : MonoBehaviour
 {
     //public CanvasGroup canvasGroup;
-    public float fadeDuration = 5f; //default duration. Can be changed in Unity Editor
+    public float fadeDuration = 0.5f; //default duration. Can be changed in Unity Editor
     
 
     public void Fade(CanvasGroup canvasGroup, bool isFadeIn)

@@ -19,25 +19,39 @@ public class DateCheck : MonoBehaviour
         lastLoginDate = dataHolder.player.loginDate;
 
         CheckDate();
+
+        //if new day reset tasks
+        if (isSameDay == false)
+        {
+            ResetTasks();
+
+            Debug.Log("Reset!");
+        }
     }
 
     public void CheckDate()
     {
+        
         if (currentDate.Date == lastLoginDate.Date)
         {
             isSameDay = true;
-            ResetTasks();
+            
         }
         else
         {
             isSameDay = false;
+           
         }
-
+    
         SaveLoadPlayerData.SaveData(dataHolder.player);
+        
     }
 
     public void ResetTasks()
     {
-        //reset checkbox (set interactable)
+        for (int i = 0; i < dataHolder.player.isDailyTaskComplete.Length; i++)
+        {
+            dataHolder.player.isDailyTaskComplete[i] = false;
+        }
     }
 }

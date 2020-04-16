@@ -24,6 +24,7 @@ public class WordPicker : MonoBehaviour
     public Text reviewPanelText;
 
     private CanvasGroup buttonCanvasGroup;
+    private CanvasGroup reviewCanvasGroup;
 
     
 
@@ -38,19 +39,20 @@ public class WordPicker : MonoBehaviour
         gameManager = GameObject.FindGameObjectWithTag("GameManager");
         rewardScript = gameManager.GetComponent<RewardScript>();
         buttonCanvasGroup = buttonCanvas.GetComponent<CanvasGroup>();
+        reviewCanvasGroup = reviewPanel.GetComponent<CanvasGroup>();
 
         //load word database xml & set array
         words = Words.Load(filePath);
 
         // Debug.Log(words.wordsArray.Length);
-        
-
-        wordsArray = words.wordsArray;
-
-        
+       
+        wordsArray = words.wordsArray; 
         wordsArrayRand = new Word[gameLength];
+
         //pick random words
         ShuffleArray(wordsArray);
+
+
         //Debug.Log(wordsArrayRand[0].name);
 
         //Set text to current word   
@@ -99,6 +101,9 @@ public class WordPicker : MonoBehaviour
         else //once end of questions show end screen
         {
             //finished screen
+            CallFade(reviewCanvasGroup);
+            buttonCanvasGroup.interactable = false;
+            buttonCanvasGroup.blocksRaycasts = false;
             rewardScript.AddReward();
         }
     }
@@ -122,12 +127,24 @@ public class WordPicker : MonoBehaviour
         }
     }
 
-    public void CallFade()
+    //calls fade script
+    public void CallFade(CanvasGroup canvasGroup)
     {
-        gameManager.GetComponent<UIFadeScript>().Fade(introOutroPanel.GetComponent<CanvasGroup>(),false);
+        bool fadeIn;
 
-        buttonCanvasGroup.interactable = true;
-        buttonCanvasGroup.blocksRaycasts = true;
+        //chech whether to fade in or out
+        if(canvasGroup.interactable == true)
+        {
+            fadeIn = false;
+        }
+        else
+        {
+            fadeIn = true;
+        }
+        gameManager.GetComponent<UIFadeScript>().Fade(canvasGroup,fadeIn);
+
+        canvasGroup.interactable = fadeIn;
+        canvasGroup.blocksRaycasts = fadeIn;
     }
 
     private void SetReviewText()

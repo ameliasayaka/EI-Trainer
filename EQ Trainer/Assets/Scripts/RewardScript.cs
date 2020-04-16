@@ -12,6 +12,12 @@ public class RewardScript : MonoBehaviour
         { GameObject.FindGameObjectWithTag("DataHolder").GetComponent<DataHolder>().player.RewardPoints += Score; }
         
     }
+    //overload
+    public void AddReward(int score)
+    {
+        if (score >= 0)
+        { GameObject.FindGameObjectWithTag("DataHolder").GetComponent<DataHolder>().player.RewardPoints += score; }
+    }
 
 
 }
