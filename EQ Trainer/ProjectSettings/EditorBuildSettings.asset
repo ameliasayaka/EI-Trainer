@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/WordGame.unity
     guid: 1edc8237731ca3d43b084f453827c30f
+  - enabled: 1
+    path: Assets/Scenes/Reflection.unity
+    guid: bcf0a65fe0c3dda4d9ec463109efff4a
   m_configObjects: {}

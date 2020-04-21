@@ -28,8 +28,8 @@ public class DataHolder : MonoBehaviour
 
             player = SaveLoadPlayerData.LoadData(player);
 
-            Debug.Log(player.playerName);
-            Debug.Log(player.playerGoals[0]);
+          //  Debug.Log(player.playerName);
+           // Debug.Log(player.playerGoals[0]);
         }
     }
 
