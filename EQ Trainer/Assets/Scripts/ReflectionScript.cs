@@ -15,18 +15,25 @@ public class ReflectionScript : MonoBehaviour
     public Text reflectionMessage;
     public Text welcomeText;
 
+    public GameObject initialPanel;
+    private CanvasGroup initialCanvasGroup;
+
     // Start is called before the first frame update
     void Start()
     {
         EmotionIntensity = 0;
         fadeScript = GameObject.FindGameObjectWithTag("GameManager").GetComponent<UIFadeScript>();
         welcomeText.text = "Welcome " + GameObject.FindGameObjectWithTag("DataHolder").GetComponent<DataHolder>().player.playerName;
+
+        //fade in initial canvas
+        initialCanvasGroup = initialPanel.GetComponent<CanvasGroup>();
+        CallFadeIn(initialCanvasGroup);
     }
 
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(EmotionIntensity);
+        //Debug.Log(EmotionIntensity);
     }
 
     public void SetEmotionandText()
@@ -43,5 +50,9 @@ public class ReflectionScript : MonoBehaviour
     {
         fadeScript.Fade(panel, false);
 
+    }
+    public void CallFadeIn(CanvasGroup panel)
+    {
+        fadeScript.Fade(panel, true);
     }
 }

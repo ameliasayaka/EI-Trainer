@@ -26,8 +26,8 @@ public class WordPicker : MonoBehaviour
     private CanvasGroup buttonCanvasGroup;
     private CanvasGroup reviewCanvasGroup;
 
-    
-
+    private PlaySoundScript soundScript;
+    //
 
 
     // Start is called before the first frame update
@@ -40,6 +40,7 @@ public class WordPicker : MonoBehaviour
         rewardScript = gameManager.GetComponent<RewardScript>();
         buttonCanvasGroup = buttonCanvas.GetComponent<CanvasGroup>();
         reviewCanvasGroup = reviewPanel.GetComponent<CanvasGroup>();
+        soundScript = gameManager.GetComponent<PlaySoundScript>();
 
         //load word database xml & set array
         words = Words.Load(filePath);
@@ -62,12 +63,6 @@ public class WordPicker : MonoBehaviour
         SetReviewText();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public void CheckWord(string category)
     {
         //deactivate buttons
@@ -75,10 +70,17 @@ public class WordPicker : MonoBehaviour
         if (Equals(wordsArrayRand[currentWordIndex].category,category))
         {
             // flash green or something
+            soundScript.PlaySound(true);
 
             //add reward points
             rewardScript.Score += 1;
 
+
+            Debug.Log("Correct!");
+        }
+        else
+        {
+            soundScript.PlaySound(false);
         }
 
         // set text to definition

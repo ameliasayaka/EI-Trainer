@@ -29,10 +29,12 @@ public class StopWatchScript : MonoBehaviour
         if (timerScript.time == 0f && isButtonShown == false)
         {
             //complete sound
-
+            gameManager.GetComponent<PlaySoundScript>().PlaySound(true);
             //show review panel
             gameManager.GetComponent<UIFadeScript>().Fade(continueButton.GetComponent<CanvasGroup>(), true); //fade in button
-                                                                                                             // continueButton.interactable = true;
+
+            // continueButton.interactable = true;
+            timerText.text = "00:00";
             isButtonShown = true;
 
         }
