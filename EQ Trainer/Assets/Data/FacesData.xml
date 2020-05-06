@@ -3,7 +3,9 @@
   <Faces>
     <Face>
       <emotion>Happy</emotion>
-      <Explanation></Explanation>
+      <Explanation>Eyes narrowed, some wrinkling around the eyes (crows feet)
+Cheeks are raised
+Lips pulled back and teeth exposed in a smile</Explanation>
       <ids>
         <id>BaseBrows</id>
         <id>HappyEyes</id>
@@ -13,7 +15,9 @@
     </Face>
     <Face>
       <emotion>Sad</emotion>
-      <Explanation></Explanation>
+      <Explanation>Inner crners of brows pulled up and together
+Upper eyelids droop and eyes looking down
+Lip corners pulled downward</Explanation>
       <ids>
         <id>SadBrows</id>
         <id>SadEyes</id>
@@ -23,7 +27,9 @@
     </Face>
     <Face>
       <emotion>Fear</emotion>
-      <Explanation></Explanation>
+      <Explanation>Brows raised and pulled together
+Raised upper eyelids and tensed lower eyelids
+Jaw dropped opend and lips stretched horizontally backwards</Explanation>
       <ids>
         <id>FearBrows</id>
         <id>FearEyes</id>
@@ -33,7 +39,9 @@
     </Face>
     <Face>
       <emotion>Surprise</emotion>
-      <Explanation></Explanation>
+      <Explanation>Brows raised but not drawn together
+Upper eyelids raised and lower eyelids neutral
+Jaw dropped down</Explanation>
       <ids>
         <id>SurpriseBrows</id>
         <id>SurpriseEyes</id>
@@ -43,7 +51,9 @@
     </Face>
     <Face>
       <emotion>Anger</emotion>
-      <Explanation></Explanation>
+      <Explanation>Brows pulled down and together
+Eyes opened wide, staring hard
+Lips pressed tightly together</Explanation>
       <ids>
         <id>AngerBrows</id>
         <id>AngerEyes</id>
@@ -53,7 +63,10 @@
     </Face>
     <Face>
       <emotion>Disgust</emotion>
-      <Explanation></Explanation>
+      <Explanation>Lowered brows
+Wrinkling on side and bridge of nose
+Upper lip raised in an inverted U
+Lower lip raised and slightly protruding</Explanation>
       <ids>
         <id>DisgustBrows</id>
         <id>DisgustEyes</id>

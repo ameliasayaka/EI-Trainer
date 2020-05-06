@@ -25,8 +25,9 @@ public class Faces
 
 public class Face
 {
- 
+    [XmlElement("emotion")]
     public string emotion;
+    [XmlElement("Explanation")]
     public string explanation;
 
     [XmlArray("ids")]

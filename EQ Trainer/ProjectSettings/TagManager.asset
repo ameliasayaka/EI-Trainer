@@ -8,7 +8,10 @@ TagManager:
   - GameManager
   - DataHolder
   - Sound
-  - Brows
+  - FaceImage
+  - CorrectText
+  - Explanation
+  - Answer
   layers:
   - Default
   - TransparentFX

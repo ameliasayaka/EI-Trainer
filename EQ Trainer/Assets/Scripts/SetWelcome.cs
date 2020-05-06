@@ -8,6 +8,7 @@ public class SetWelcome : MonoBehaviour
     //text to change
     public Text welcomeText;
 
+    private string baseWelcomeMessage = "Welcome";
     //access player details
     private PlayerData playerData;
     private string playerName;
@@ -15,11 +16,17 @@ public class SetWelcome : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        welcomeText.text = "Welcome, ";
-        playerData = GameObject.FindGameObjectWithTag("DataHolder").GetComponent<DataHolder>().player;
-        playerName = playerData.playerName;
+        
+        welcomeText.text = baseWelcomeMessage;
 
-        welcomeText.text += playerName;
+        if (System.IO.File.Exists(Application.persistentDataPath + "/playerData.pd"))
+        {
+            playerData = GameObject.FindGameObjectWithTag("DataHolder").GetComponent<DataHolder>().player;
+            playerName = playerData.playerName;
+
+            welcomeText.text += (" back, " + playerName);
+        }
+
     }
 
     //on changing player name updates text

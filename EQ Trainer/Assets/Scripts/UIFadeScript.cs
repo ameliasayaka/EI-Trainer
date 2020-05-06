@@ -50,4 +50,9 @@ public class UIFadeScript : MonoBehaviour
 
         yield return null;
     }
+
+    public void CallFadeForAttachedCanvas(bool isFade)
+    {
+        Fade(gameObject.GetComponent<CanvasGroup>(), isFade);
+    }
 }
