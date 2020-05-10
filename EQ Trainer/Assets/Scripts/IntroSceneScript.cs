@@ -10,6 +10,7 @@ public class IntroSceneScript : MonoBehaviour /*IPointerClickHandler*/
     public CanvasGroup initialCanvasGroup;
     public CanvasGroup secondCanvasGroup;
     public CanvasGroup playerInputCanvasGroup;
+    public CanvasGroup warningPanel;
 
     private UIFadeScript fadeScript;
     private GameObject gameManager;
@@ -115,16 +116,21 @@ public class IntroSceneScript : MonoBehaviour /*IPointerClickHandler*/
     //Saves Player inputed data
     public void PlayerSetup()
     {
-
+        bool isEmpty = false;
         playerName = nameInput.text;
-        
+        Debug.Log(playerName);
         for (int i = 0; i < goalInputList.Count; i++)
         {
             if (goalInputList[i].text != null)
             { goals[i] = goalInputList[i].text; }
+            else
+            {
+                isEmpty = true;
+                Debug.Log("Woops");
+            }
         }
 
-        if (playerName != null)
+        if (playerName.Length > 1 && isEmpty == false)
         {
 
             dataHolderScript.player.playerGoals = goals;
@@ -135,7 +141,10 @@ public class IntroSceneScript : MonoBehaviour /*IPointerClickHandler*/
         }
         else
         {
-            //write something to player telling them to input something
+            //Show Warning Panel
+            warningPanel.alpha = 1f;
+            warningPanel.interactable = true;
+            warningPanel.blocksRaycasts = true;
         }
 
         

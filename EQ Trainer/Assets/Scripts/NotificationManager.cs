@@ -24,7 +24,6 @@ public class NotificationManager : MonoBehaviour
         };
         AndroidNotificationCenter.RegisterNotificationChannel(defaultNotificationChannel);
 
-        
 
 
     }
@@ -32,9 +31,13 @@ public class NotificationManager : MonoBehaviour
     //sends notification after player pauses game
     private void OnApplicationPause(bool pause)
     {
-        repeatInterval = new TimeSpan(3, 0, 0); //set time span to 3 hours
-        fireTime = DateTime.Now.AddHours(3); //send first notif in 3 hours
-        AndroidNotification notification = new AndroidNotification(notifTitle, notifContent, fireTime, repeatInterval);
-        var identifier = AndroidNotificationCenter.SendNotification(notification, "default_channel");
+        repeatInterval = new TimeSpan(0, 0, 0); //set time span to 3 hours
+        fireTime = DateTime.Now.AddHours(0); //send first notif in 3 hours
+
+        if (AndroidNotificationCenter.CheckScheduledNotificationStatus(0) != NotificationStatus.Delivered)
+        {
+            AndroidNotification notification = new AndroidNotification(notifTitle, notifContent, fireTime, repeatInterval);
+            var identifier = AndroidNotificationCenter.SendNotification(notification, "default_channel");
+        }
     }
 }

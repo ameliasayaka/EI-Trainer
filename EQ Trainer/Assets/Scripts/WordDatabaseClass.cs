@@ -4,6 +4,7 @@ using UnityEngine;
 using System.Xml;
 using System.Xml.Serialization;
 using System.IO;
+using UnityEngine.Networking;
 
 [XmlRoot("WordDatabase")]
 public class Words
@@ -12,14 +13,32 @@ public class Words
     [XmlArrayItem("Word")]
     public Word[] wordsArray;
 
-    public static Words Load(string path)
+    public static Words Load(string fileName)
     {
-        var serializer = new XmlSerializer(typeof(Words));
-        using (var stream = new FileStream(path, FileMode.Open))
+        // string path = Application.streamingAssetsPath + "/" + fileName;
+        // Debug.Log(path);
+
+        // UnityWebRequest myWR = new UnityWebRequest("jar:file://" + path, "Get");
+        //myWR.SendWebRequest();
+        // XmlSerializer serializer = new XmlSerializer(typeof(Words));
+        // using (MemoryStream stream = new MemoryStream(myWR.downloadHandler.data))
+        // {
+        //    return serializer.Deserialize(stream) as Words;
+
+        // }
+
+        Words deserialisedWords;
+        XmlSerializer deserializer = new XmlSerializer(typeof(Words));
+        TextAsset xml = Resources.Load(fileName) as TextAsset;
+
+        using (MemoryStream stream = new MemoryStream(xml.bytes))
         {
-            return serializer.Deserialize(stream) as Words;
+            deserialisedWords = deserializer.Deserialize(stream) as Words;
         }
+
+        return deserialisedWords;
     }
+
 
 }
 public class Word

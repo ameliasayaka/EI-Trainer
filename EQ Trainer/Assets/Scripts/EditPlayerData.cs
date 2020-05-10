@@ -9,6 +9,9 @@ public class EditPlayerData : MonoBehaviour
     //private SaveLoadPlayerData saveLoadScript;
     public List<InputField> goalInputList;
     public InputField nameInput;
+    public CanvasGroup warningPanel;
+    public CanvasGroup playerSettingsPanel;
+    public CanvasGroup optionsPanel;
 
     private string playerName;
     private string[] goals;
@@ -29,11 +32,14 @@ public class EditPlayerData : MonoBehaviour
 
 
         //set input field text to existing values
-        for (int i = 0; i < goalInputList.Count; i++)
+        if (System.IO.File.Exists(Application.persistentDataPath + "/playerData.pd"))
         {
-            goalInputList[i].text = dataHolderScript.player.playerGoals[i];
+            for (int i = 0; i < goalInputList.Count; i++)
+            {
+                goalInputList[i].text = dataHolderScript.player.playerGoals[i];
+            }
+            nameInput.text = dataHolderScript.player.playerName;
         }
-        nameInput.text = dataHolderScript.player.playerName;
     }
 
     //Set New Name and Goals
@@ -52,7 +58,7 @@ public class EditPlayerData : MonoBehaviour
             }
         }
 
-        if (playerName != null && !containsNull)
+        if (playerName.Length > 1 && !containsNull)
         {
             dataHolderScript.player.playerName = playerName;
             for (int i = 0; i < goalInputList.Count; i++)
@@ -60,10 +66,16 @@ public class EditPlayerData : MonoBehaviour
                 dataHolderScript.player.playerGoals[i] = goals[i];
             }
             SaveLoadPlayerData.SaveData(dataHolderScript.player);
+            optionsPanel.interactable = true;
+            playerSettingsPanel.interactable = false;
+            playerSettingsPanel.GetComponent<UIScrollScript>().Scroll();
         }
         else
         {
-            //write something to player telling them to input something
+            //Show Warning Panel
+            warningPanel.alpha = 1f;
+            warningPanel.interactable = true;
+            warningPanel.blocksRaycasts = true;
         }
 
 

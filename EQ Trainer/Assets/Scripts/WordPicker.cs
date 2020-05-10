@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class WordPicker : MonoBehaviour
 {
-    private string filePath = "Assets/Data/WordDatabase.xml";
+    private string filePath = "WordDatabase";
     private int currentWordIndex;
     private Word[] wordsArray;
     private Word[] wordsArrayRand;

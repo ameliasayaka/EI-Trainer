@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Testing>
+  <Scenarios>
+    <Scenario category="empathy">
+      <text>I can recognize my emotions as I experience them</text>
+      <Options>
+        <option>
+          <optionText>Option 1</optionText>
+          <score>1</score>
+        </option>
+        <option>
+          <optionText>Option 2</optionText>
+          <score>2</score>
+        </option>
+        <option>
+          <optionText>Option 3</optionText>
+          <score>3</score>
+        </option>
+        <option>
+          <optionText>Option 4</optionText>
+          <score>4</score>
+        </option>
+        <option>
+          <optionText>Option 5</optionText>
+          <score>5</score>
+        </option>
+      </Options>
+    </Scenario>
+    <Scenario category="empathy">
+      <text>I lose my temper when I feel frustrated</text>
+      <Options>
+        <option>
+          <optionText>Option 1</optionText>
+          <score>5</score>
+        </option>
+        <option>
+          <optionText>Option 2</optionText>
+          <score>4</score>
+        </option>
+        <option>
+          <optionText>Option 3</optionText>
+          <score>3</score>
+        </option>
+        <option>
+          <optionText>Option 4</optionText>
+          <score>2</score>
+        </option>
+        <option>
+          <optionText>Option 5</optionText>
+          <score>1</score>
+        </option>
+      </Options>
+    </Scenario>
+    <Scenario category="empathy">
+      <text>People have told me that I'm a good listener</text>
+      <Options>
+        <option>
+          <optionText>Option 1</optionText>
+          <score>1</score>
+        </option>
+        <option>
+          <optionText>Option 2</optionText>
+          <score>2</score>
+        </option>
+        <option>
+          <optionText>Option 3</optionText>
+          <score>3</score>
+        </option>
+        <option>
+          <optionText>Option 4</optionText>
+          <score>4</score>
+        </option>
+        <option>
+          <optionText>Option 5</optionText>
+          <score>5</score>
+        </option>
+      </Options>
+    </Scenario>
+    <Scenario category="empathy">
+      <text>I know how to calm myself down when I feel anxious or upset</text>
+      <Options>
+        <option>
+          <optionText>Option 1</optionText>
+          <score>1</score>
+        </option>
+        <option>
+          <optionText>Option 2</optionText>
+          <score>2</score>
+        </option>
+        <option>
+          <optionText>Option 3</optionText>
+          <score>3</score>
+        </option>
+        <option>
+          <optionText>Option 4</optionText>
+          <score>4</score>
+        </option>
+        <option>
+          <optionText>Option 5</optionText>
+          <score>5</score>
+        </option>
+      </Options>
+    </Scenario>
+    <Scenario category="empathy">
+      <text>I enjoy organizing groups</text>
+      <Options>
+        <option>
+          <optionText>Option 1</optionText>
+          <score>1</score>
+        </option>
+        <option>
+          <optionText>Option 2</optionText>
+          <score>2</score>
+        </option>
+        <option>
+          <optionText>Option 3</optionText>
+          <score>3</score>
+        </option>
+        <option>
+          <optionText>Option 4</optionText>
+          <score>4</score>
+        </option>
+        <option>
+          <optionText>Option 5</optionText>
+          <score>5</score>
+        </option>
+      </Options>
+    </Scenario>
+    <Scenario category="empathy">
+      <text>I find it hard to focus on something over the long term</text>
+      <Options>
+        <option>
+          <optionText>Option 1</optionText>
+          <score>5</score>
+        </option>
+        <option>
+          <optionText>Option 2</optionText>
+          <score>4</score>
+        </option>
+        <option>
+          <optionText>Option 3</optionText>
+          <score>3</score>
+        </option>
+        <option>
+          <optionText>Option 4</optionText>
+          <score>2</score>
+        </option>
+        <option>
+          <optionText>Option 5</optionText>
+          <score>1</score>
+        </option>
+      </Options>
+    </Scenario>
+    <Scenario category="empathy">
+      <text>I find it difficult to move on when I feel frustrated or unhappy</text>
+      <Options>
+        <option>
+          <optionText>Option 1</optionText>
+          <score>5</score>
+        </option>
+        <option>
+          <optionText>Option 2</optionText>
+          <score>4</score>
+        </option>
+        <option>
+          <optionText>Option 3</optionText>
+          <score>3</score>
+        </option>
+        <option>
+          <optionText>Option 4</optionText>
+          <score>2</score>
+        </option>
+        <option>
+          <optionText>Option 5</optionText>
+          <score>1</score>
+        </option>
+      </Options>
+    </Scenario>
+    <Scenario category="empathy">
+      <text>I know my strengths and weaknesses</text>
+      <Options>
+        <option>
+          <optionText>Option 1</optionText>
+          <score>1</score>
+        </option>
+        <option>
+          <optionText>Option 2</optionText>
+          <score>2</score>
+        </option>
+        <option>
+          <optionText>Option 3</optionText>
+          <score>3</score>
+        </option>
+        <option>
+          <optionText>Option 4</optionText>
+          <score>4</score>
+        </option>
+        <option>
+          <optionText>Option 5</optionText>
+          <score>5</score>
+        </option>
+      </Options>
+    </Scenario>
+    <Scenario category="empathy">
+      <text>I avoid conflict and negotiations</text>
+      <Options>
+        <option>
+          <optionText>Option 1</optionText>
+          <score>5</score>
+        </option>
+        <option>
+          <optionText>Option 2</optionText>
+          <score>4</score>
+        </option>
+        <option>
+          <optionText>Option 3</optionText>
+          <score>3</score>
+        </option>
+        <option>
+          <optionText>Option 4</optionText>
+          <score>2</score>
+        </option>
+        <option>
+          <optionText>Option 5</optionText>
+          <score>1</score>
+        </option>
+      </Options>
+    </Scenario>
+    <Scenario category="empathy">
+      <text>I feel that I don't enjoy my work</text>
+      <Options>
+        <option>
+          <optionText>Option 1</optionText>
+          <score>5</score>
+        </option>
+        <option>
+          <optionText>Option 2</optionText>
+          <score>4</score>
+        </option>
+        <option>
+          <optionText>Option 3</optionText>
+          <score>3</score>
+        </option>
+        <option>
+          <optionText>Option 4</optionText>
+          <score>2</score>
+        </option>
+        <option>
+          <optionText>Option 5</optionText>
+          <score>1</score>
+        </option>
+      </Options>
+    </Scenario>
+    <Scenario category="empathy">
+      <text>I ask people for feedback on what I do well, and how I can improve</text>
+      <Options>
+        <option>
+          <optionText>Option 1</optionText>
+          <score>1</score>
+        </option>
+        <option>
+          <optionText>Option 2</optionText>
+          <score>2</score>
+        </option>
+        <option>
+          <optionText>Option 3</optionText>
+          <score>3</score>
+        </option>
+        <option>
+          <optionText>Option 4</optionText>
+          <score>4</score>
+        </option>
+        <option>
+          <optionText>Option 5</optionText>
+          <score>5</score>
+        </option>
+      </Options>
+    </Scenario>
+    <Scenario category="empathy">
+      <text>I set long-term goals, and review my progress regularly</text>
+      <Options>
+        <option>
+          <optionText>Option 1</optionText>
+          <score>1</score>
+        </option>
+        <option>
+          <optionText>Option 2</optionText>
+          <score>2</score>
+        </option>
+        <option>
+          <optionText>Option 3</optionText>
+          <score>3</score>
+        </option>
+        <option>
+          <optionText>Option 4</optionText>
+          <score>4</score>
+        </option>
+        <option>
+          <optionText>Option 5</optionText>
+          <score>5</score>
+        </option>
+      </Options>
+    </Scenario>
+    <Scenario category="empathy">
+      <text>I find it difficult to read other people's emotions</text>
+      <Options>
+        <option>
+          <optionText>Option 1</optionText>
+          <score>5</score>
+        </option>
+        <option>
+          <optionText>Option 2</optionText>
+          <score>4</score>
+        </option>
+        <option>
+          <optionText>Option 3</optionText>
+          <score>3</score>
+        </option>
+        <option>
+          <optionText>Option 4</optionText>
+          <score>2</score>
+        </option>
+        <option>
+          <optionText>Option 5</optionText>
+          <score>1</score>
+        </option>
+      </Options>
+    </Scenario>
+    <Scenario category="empathy">
+      <text>I struggle to build rapport with others</text>
+      <Options>
+        <option>
+          <optionText>Option 1</optionText>
+          <score>5</score>
+        </option>
+        <option>
+          <optionText>Option 2</optionText>
+          <score>4</score>
+        </option>
+        <option>
+          <optionText>Option 3</optionText>
+          <score>3</score>
+        </option>
+        <option>
+          <optionText>Option 4</optionText>
+          <score>2</score>
+        </option>
+        <option>
+          <optionText>Option 5</optionText>
+          <score>1</score>
+        </option>
+      </Options>
+    </Scenario>
+    <Scenario category="empathy">
+      <text>I use active listening skills when people speak to me</text>
+      <Options>
+        <option>
+          <optionText>Option 1</optionText>
+          <score>1</score>
+        </option>
+        <option>
+          <optionText>Option 2</optionText>
+          <score>2</score>
+        </option>
+        <option>
+          <optionText>Option 3</optionText>
+          <score>3</score>
+        </option>
+        <option>
+          <optionText>Option 4</optionText>
+          <score>4</score>
+        </option>
+        <option>
+          <optionText>Option 5</optionText>
+          <score>5</score>
+        </option>
+      </Options>
+    </Scenario>
+  </Scenarios>
+<Advice>
+<Tip>Respond instead of reacting to conflict
+Try stay calm and remember to keep resolution as the goal!</Tip>
+<Tip>Utilize active listening skills
+Make sure you try understand what's being said before you respond</Tip>
+<Tip>Be motivated
+Try set goals for yourself and stay resilient through challenges</Tip>
+<Tip>Practice ways to maintain a positive attitude
+Find something that helps you stay positive, for example meditation</Tip>
+<Tip>Take critique well
+Try understand critique before getting defensive or offended</Tip>
+<Tip>Empathize with others
+Try look at things from other perspectives and relate to other people</Tip>
+<Tip>Pay attention to how you behave
+Try to note your own behaviour and how it affects your life</Tip>
+<Tip>Eat well!
+It sounds obvious but a balanced diet has a huge effect on mental wellbeing!</Tip>
+<Tip>Take breaks
+Take the time to slow down and process how you're feeling to help  avoid being overwhelmed</Tip>
+<Tip>Keep a diary
+This will help you gauge yourself and evaluate your own behaviours</Tip>
+</Advice>
+</Testing>

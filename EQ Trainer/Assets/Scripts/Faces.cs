@@ -12,13 +12,19 @@ public class Faces
     [XmlArrayItem("Face")]
     public Face[] facesArray;
 
-    public static Faces Load(string path)
+    public static Faces Load(string fileName)
     {
-        var serializer = new XmlSerializer(typeof(Faces));
-        using (var stream = new FileStream(path, FileMode.Open))
+        XmlSerializer serializer = new XmlSerializer(typeof(Faces));
+        Faces deserialisedFaces;
+        XmlSerializer deserializer = new XmlSerializer(typeof(Faces));
+        TextAsset xml = Resources.Load(fileName) as TextAsset;
+
+        using (MemoryStream stream = new MemoryStream(xml.bytes))
         {
-            return serializer.Deserialize(stream) as Faces;
+            deserialisedFaces = deserializer.Deserialize(stream) as Faces;
         }
+
+        return deserialisedFaces;
     }
 
 }

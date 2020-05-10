@@ -69,7 +69,7 @@ public class FaceCheck : MonoBehaviour
         answerPanelScript = answerPanel.GetComponent<FaceAnswerPanel>();
 
         //Load Face Data
-        faces = Faces.Load("Assets/Data/FacesData.xml");
+        faces = Faces.Load("FacesData");
         facesArray = faces.facesArray;
         faceArrayRand = new Face[facesArray.Length];
 
@@ -143,11 +143,14 @@ public class FaceCheck : MonoBehaviour
         }
     }
 
+
+    //Sets Ids for correct answers
     private void SetCorrectID()
     {
         correctIds = faceArrayRand[currentQuestion].faceIds;
     }
 
+    //Sets IDs for player answers
     public void SetAnswerID()
     {
         for (int i=0; i < sprites.Length; i++)
@@ -156,6 +159,8 @@ public class FaceCheck : MonoBehaviour
             answerIds[i] = sprites[i].name;
         }
     }
+
+    //Shuffles array so question order is different every time player loads scene
     public Face[] ShuffleFaceArray(Face[] faceArray)
     {
         System.Random rand = new System.Random();
@@ -177,7 +182,7 @@ public class FaceCheck : MonoBehaviour
         return array;
     }
 
-
+    //Sets Question prompt
     private void SetPrompt(Text promptText)
     {
         promptText.text = faceArrayRand[currentQuestion].emotion;

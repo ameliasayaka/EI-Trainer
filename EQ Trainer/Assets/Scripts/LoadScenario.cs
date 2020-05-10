@@ -12,13 +12,19 @@ public class Scenarios
     [XmlArrayItem("Scenario")]
     public Scenario[] scenariosArray;
 
-    public static Scenarios Load(string path)
+    public static Scenarios Load(string fileName)
     {
-        var serializer = new XmlSerializer(typeof(Scenarios));
-        using (var stream = new FileStream(path, FileMode.Open))
+        XmlSerializer serializer = new XmlSerializer(typeof(Scenarios));
+        Scenarios deserialisedScenarios;
+        XmlSerializer deserializer = new XmlSerializer(typeof(Scenarios));
+        TextAsset xml = Resources.Load(fileName) as TextAsset;
+
+        using (MemoryStream stream = new MemoryStream(xml.bytes))
         {
-            return serializer.Deserialize(stream) as Scenarios;
+            deserialisedScenarios = deserializer.Deserialize(stream) as Scenarios;
         }
+
+        return deserialisedScenarios;
     }
 
 }

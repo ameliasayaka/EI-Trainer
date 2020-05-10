@@ -24,7 +24,7 @@ public class SetWelcome : MonoBehaviour
             playerData = GameObject.FindGameObjectWithTag("DataHolder").GetComponent<DataHolder>().player;
             playerName = playerData.playerName;
 
-            welcomeText.text += (" back, " + playerName);
+            welcomeText.text += (", " + playerName);
         }
 
     }

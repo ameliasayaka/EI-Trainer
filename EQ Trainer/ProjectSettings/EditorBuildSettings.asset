@@ -23,4 +23,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/FaceMaker.unity
     guid: c8127d2a789b4054fb4f940578e0cad2
-  m_configObjects: {}
+  m_configObjects:
+    com.unity.addressableassets: {fileID: 11400000, guid: fe4eb28fab2de4b48b8af796bd3d2be1,
+      type: 2}
