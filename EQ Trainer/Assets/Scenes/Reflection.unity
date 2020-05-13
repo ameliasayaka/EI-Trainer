@@ -1335,12 +1335,12 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 7c8c2c1a4bd1bbf47b37de9d70f0cbda, type: 3}
     m_FontSize: 14
     m_FontStyle: 0
     m_BestFit: 1
     m_MinSize: 10
-    m_MaxSize: 80
+    m_MaxSize: 70
     m_Alignment: 3
     m_AlignByGeometry: 0
     m_RichText: 0
@@ -2485,12 +2485,12 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 7c8c2c1a4bd1bbf47b37de9d70f0cbda, type: 3}
     m_FontSize: 14
     m_FontStyle: 2
     m_BestFit: 1
     m_MinSize: 10
-    m_MaxSize: 80
+    m_MaxSize: 70
     m_Alignment: 3
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -4323,6 +4323,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3180723874330735532, guid: c1f3fb223295db44189d10e63db630b7,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1520446230}
+    - target: {fileID: 3180723874330735532, guid: c1f3fb223295db44189d10e63db630b7,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: QuitGame
+      objectReference: {fileID: 0}
     - target: {fileID: 4420786417361382183, guid: c1f3fb223295db44189d10e63db630b7,
         type: 3}
       propertyPath: m_AnchorMax.y
@@ -4341,7 +4351,7 @@ PrefabInstance:
     - target: {fileID: 4420786417730566711, guid: c1f3fb223295db44189d10e63db630b7,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 360
+      value: 309
       objectReference: {fileID: 0}
     - target: {fileID: 4420786417730566711, guid: c1f3fb223295db44189d10e63db630b7,
         type: 3}
@@ -4488,5 +4498,41 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -2612
       objectReference: {fileID: 0}
+    - target: {fileID: 8049458519742683523, guid: c1f3fb223295db44189d10e63db630b7,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 4420786418496409253}
+    - target: {fileID: 8049458519742683523, guid: c1f3fb223295db44189d10e63db630b7,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: set_alpha
+      objectReference: {fileID: 0}
+    - target: {fileID: 8049458519742683523, guid: c1f3fb223295db44189d10e63db630b7,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 4420786418496409253}
+    - target: {fileID: 8049458519742683523, guid: c1f3fb223295db44189d10e63db630b7,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: set_blocksRaycasts
+      objectReference: {fileID: 0}
+    - target: {fileID: 8049458519742683523, guid: c1f3fb223295db44189d10e63db630b7,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 4420786418496409253}
+    - target: {fileID: 8049458519742683523, guid: c1f3fb223295db44189d10e63db630b7,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: set_interactable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c1f3fb223295db44189d10e63db630b7, type: 3}
+--- !u!225 &4420786418496409253 stripped
+CanvasGroup:
+  m_CorrespondingSourceObject: {fileID: 3350802355294812172, guid: c1f3fb223295db44189d10e63db630b7,
+    type: 3}
+  m_PrefabInstance: {fileID: 4420786418496409252}
+  m_PrefabAsset: {fileID: 0}
