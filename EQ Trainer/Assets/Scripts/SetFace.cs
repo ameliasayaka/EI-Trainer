@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-//tobe put on each facial feature game object
+//to be put on each facial feature game object
 public class SetFace : MonoBehaviour
 {
 
@@ -68,17 +68,6 @@ public class SetFace : MonoBehaviour
         spriteRenderer.sprite = randSprites[spriteIndex];
     }
 
-    //sets to correct feature (usage tbc)
-    public void SetCorrectSprite(string spriteName)
-    {
-        foreach(Sprite sprite in randSprites)
-        {
-            if (Equals(spriteName, sprite.name))
-            {
-                spriteRenderer.sprite = sprite;
-            }
-        }
-    }
     public Sprite[] RandomiseSpriteOrder(Sprite[] sprites)
     {
         Sprite[] randSpriteList;

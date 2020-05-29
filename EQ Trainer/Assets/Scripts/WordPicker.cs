@@ -69,7 +69,7 @@ public class WordPicker : MonoBehaviour
 
         if (Equals(wordsArrayRand[currentWordIndex].category,category))
         {
-            // flash green or something
+            // play correct sound
             soundScript.PlaySound(true);
 
             //add reward points
@@ -82,13 +82,6 @@ public class WordPicker : MonoBehaviour
         {
             soundScript.PlaySound(false);
         }
-
-        // set text to definition
-        //wordText.text = wordsArrayRand[currentWordIndex].definition;
-
-        // buttonCanvasGroup.interactable = false;
-        
-        //  continue button
 
     }
 

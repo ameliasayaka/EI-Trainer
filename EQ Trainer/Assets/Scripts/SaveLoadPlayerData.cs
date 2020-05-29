@@ -2,11 +2,8 @@
 using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
 
-public class SaveLoadPlayerData
+public static class SaveLoadPlayerData
 {
-
-    //public static PlayerData playerData;
-    //public GameObject DataHolder;
 
     public static void SaveData(PlayerData player)
     {
@@ -22,17 +19,16 @@ public class SaveLoadPlayerData
        // Debug.Log(player.playerName);
         
     }
-    public static PlayerData LoadData(PlayerData playerData)
+    public static PlayerData LoadData(PlayerData player)
     {
         if (System.IO.File.Exists(Application.persistentDataPath + "/playerData.pd"))
         {
-            //playerData = new PlayerData();
             BinaryFormatter bFormatter = new BinaryFormatter();
             FileStream file = System.IO.File.Open(Application.persistentDataPath + "/playerData.pd", FileMode.Open);
-            playerData = (PlayerData)bFormatter.Deserialize(file);
+            player = (PlayerData)bFormatter.Deserialize(file);
             file.Close();
 
-            return playerData;
+            return player;
         }
         return null;
     }

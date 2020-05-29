@@ -32,6 +32,8 @@ public class StopWatchScript : MonoBehaviour
             gameManager.GetComponent<PlaySoundScript>().PlaySound(true);
             //show review panel
             gameManager.GetComponent<UIFadeScript>().Fade(continueButton.GetComponent<CanvasGroup>(), true); //fade in button
+            //Set button to not ignore parent group
+            continueButton.GetComponent<CanvasGroup>().ignoreParentGroups = false;
 
             // continueButton.interactable = true;
             timerText.text = "00:00";
@@ -40,10 +42,6 @@ public class StopWatchScript : MonoBehaviour
         }
     }
 
-    //public void StartTimer()
-    //{
-    //    timerScript.isTimerRunning = true;
-    //}
     public void PausePlayTimer()
     {
         bool isPaused = !timerScript.isTimerRunning;

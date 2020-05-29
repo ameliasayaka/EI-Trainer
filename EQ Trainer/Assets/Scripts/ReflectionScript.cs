@@ -5,7 +5,6 @@ using UnityEngine.UI;
 
 public class ReflectionScript : MonoBehaviour
 {
-    private UIFadeScript fadeScript;
     public string PlayerEmotion { get; set; }
     public int EmotionIntensity { get; set; }
 
@@ -22,18 +21,11 @@ public class ReflectionScript : MonoBehaviour
     void Start()
     {
         EmotionIntensity = 0;
-        fadeScript = GameObject.FindGameObjectWithTag("GameManager").GetComponent<UIFadeScript>();
         welcomeText.text = "Welcome " + GameObject.FindGameObjectWithTag("DataHolder").GetComponent<DataHolder>().player.playerName;
 
         //fade in initial canvas
         initialCanvasGroup = initialPanel.GetComponent<CanvasGroup>();
-        CallFadeIn(initialCanvasGroup);
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        //Debug.Log(EmotionIntensity);
+        initialCanvasGroup.GetComponent<UIFadeScript>().CallFadeForAttachedCanvas(true);
     }
 
     public void SetEmotionandText()
@@ -46,13 +38,5 @@ public class ReflectionScript : MonoBehaviour
     {
         EmotionIntensity = Mathf.FloorToInt(scrollbarFirst.value * 10f);
     }
-    public void CallFadeOut(CanvasGroup panel)
-    {
-        fadeScript.Fade(panel, false);
-
-    }
-    public void CallFadeIn(CanvasGroup panel)
-    {
-        fadeScript.Fade(panel, true);
-    }
+  
 }

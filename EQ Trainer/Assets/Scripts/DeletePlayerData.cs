@@ -16,12 +16,5 @@ public class DeletePlayerData : MonoBehaviour
             File.Delete(path);
 
         }
-
-        //File.Delete(path);
-
-        //Debug.Log(File.Exists(path));
-
-        ////Quit application
-        ////gameObject.GetComponent<SceneHandler>().QuitGame();
     }
 }

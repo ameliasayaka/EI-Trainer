@@ -5,7 +5,6 @@ using UnityEngine;
 //Controls Scroll Animation of Menus
 public class UIScrollScript : MonoBehaviour
 {
-    private GameObject panel;
     private bool isOpen;
     private bool isInteractable;
     private bool isBlockRaycast;
@@ -33,19 +32,13 @@ public class UIScrollScript : MonoBehaviour
     //toggle panel interactivity
     public void ToggleInteractive()
     {
-        //isInteractable = gameObject.activeSelf;
-        //panel.SetActive(!isInteractable);
-
+        //Set bool
         isBlockRaycast = canvasGroup.blocksRaycasts;
         isInteractable = canvasGroup.interactable;
-
         
-
+        //Change bool
         canvasGroup.interactable = !isInteractable;
         canvasGroup.blocksRaycasts = !isBlockRaycast;
-
-        //isInteractable = parentCanvas.enabled;
-        //parentCanvas.enabled = !isInteractable;
     }
     
 }

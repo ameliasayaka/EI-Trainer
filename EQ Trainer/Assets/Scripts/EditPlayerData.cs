@@ -6,7 +6,6 @@ using UnityEngine.UI;
 public class EditPlayerData : MonoBehaviour
 {
     private GameObject dataHolder;
-    //private SaveLoadPlayerData saveLoadScript;
     public List<InputField> goalInputList;
     public InputField nameInput;
     public CanvasGroup warningPanel;
@@ -18,7 +17,7 @@ public class EditPlayerData : MonoBehaviour
 
     private bool containsNull;
 
-    DataHolder dataHolderScript;
+    private DataHolder dataHolderScript;
 
     // Start is called before the first frame update
     void Start()
@@ -50,7 +49,7 @@ public class EditPlayerData : MonoBehaviour
 
         for (int i = 0; i < goalInputList.Count; i++)
         {
-            if (goalInputList[i].text != null)
+            if (goalInputList[i].text.Length > 1)
             { goals[i] = goalInputList[i].text; }
             else
             {

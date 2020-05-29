@@ -289,6 +289,7 @@ GameObject:
   - component: {fileID: 46870149}
   - component: {fileID: 46870148}
   - component: {fileID: 46870150}
+  - component: {fileID: 46870151}
   m_Layer: 5
   m_Name: InitialPanel
   m_TagString: Untagged
@@ -370,6 +371,19 @@ CanvasGroup:
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 1
+--- !u!114 &46870151
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 46870146}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6de496154f9b93c4cacded63e8af269e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fadeDuration: 0.5
 --- !u!1001 &83883880
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1368,6 +1382,7 @@ GameObject:
   - component: {fileID: 606372297}
   - component: {fileID: 606372296}
   - component: {fileID: 606372298}
+  - component: {fileID: 606372295}
   m_Layer: 5
   m_Name: Panel
   m_TagString: Untagged
@@ -1398,6 +1413,19 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &606372295
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 606372293}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6de496154f9b93c4cacded63e8af269e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fadeDuration: 0.5
 --- !u!114 &606372296
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1540,27 +1568,27 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1520446224}
-        m_MethodName: CallFadeOut
-        m_Mode: 2
+      - m_Target: {fileID: 46870151}
+        m_MethodName: CallFadeForAttachedCanvas
+        m_Mode: 6
         m_Arguments:
-          m_ObjectArgument: {fileID: 46870150}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.CanvasGroup, UnityEngine
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1520446224}
-        m_MethodName: CallFadeIn
-        m_Mode: 2
+      - m_Target: {fileID: 606372295}
+        m_MethodName: CallFadeForAttachedCanvas
+        m_Mode: 6
         m_Arguments:
-          m_ObjectArgument: {fileID: 606372298}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.CanvasGroup, UnityEngine
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 0
+          m_BoolArgument: 1
         m_CallState: 2
       - m_Target: {fileID: 1520446233}
         m_MethodName: PlaySound
@@ -1783,38 +1811,27 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1520446224}
-        m_MethodName: CallFadeOut
-        m_Mode: 2
+      - m_Target: {fileID: 606372295}
+        m_MethodName: CallFadeForAttachedCanvas
+        m_Mode: 6
         m_Arguments:
-          m_ObjectArgument: {fileID: 606372298}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.CanvasGroup, UnityEngine
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1520446224}
-        m_MethodName: CallFadeOut
-        m_Mode: 2
+      - m_Target: {fileID: 1553267019}
+        m_MethodName: CallFadeForAttachedCanvas
+        m_Mode: 6
         m_Arguments:
-          m_ObjectArgument: {fileID: 733385028}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.CanvasGroup, UnityEngine
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1520446224}
-        m_MethodName: CallFadeIn
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 1553267018}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.CanvasGroup, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
+          m_BoolArgument: 1
         m_CallState: 2
 --- !u!114 &733385030
 MonoBehaviour:

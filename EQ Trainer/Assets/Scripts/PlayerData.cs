@@ -55,7 +55,7 @@ public class PlayerData /*: MonoBehaviour*/
 }
 
 [System.Serializable]
-public class PlayerScore
+public struct PlayerScore
     {
         int score;
         string date;

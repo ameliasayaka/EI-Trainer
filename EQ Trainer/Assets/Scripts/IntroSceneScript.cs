@@ -62,6 +62,7 @@ public class IntroSceneScript : MonoBehaviour /*IPointerClickHandler*/
         if (initialCanvasGroup.alpha == 0f && initialCanvasGroup.interactable == true)
         { fadeScript.Fade(initialCanvasGroup, true); }
 
+        //on click skip fade and start next fade
         if (touch.phase == TouchPhase.Ended || Input.GetMouseButtonUp(0) == true)
         {
             //check if click registered
@@ -121,12 +122,12 @@ public class IntroSceneScript : MonoBehaviour /*IPointerClickHandler*/
         Debug.Log(playerName);
         for (int i = 0; i < goalInputList.Count; i++)
         {
-            if (goalInputList[i].text != null)
+            if (goalInputList[i].text.Length > 1)
             { goals[i] = goalInputList[i].text; }
             else
             {
                 isEmpty = true;
-                Debug.Log("Woops");
+               // Debug.Log("Woops");
             }
         }
 
@@ -149,19 +150,5 @@ public class IntroSceneScript : MonoBehaviour /*IPointerClickHandler*/
 
         
     }
-
-
-    //requires users to click before moving on
-    //public void OnPointerClick(PointerEventData pointerEventData)
-    //{
-    //    //check if click registered
-    //     Debug.Log("Clicked");
-
-    //    if(initialCanvasGroup.alpha == 1 && initialCanvasGroup.interactable == true)
-    //    {
-    //        fadeScript.Fade(false);
-    //    }
-    //}
-
 
 }

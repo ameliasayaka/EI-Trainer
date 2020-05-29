@@ -94,7 +94,7 @@ public class FaceCheck : MonoBehaviour
                 //Debug.Log(answerIds[i]);
             }
         }
-
+        //Set colour and explanation
         answerPanelScript.SetCorrectTextAndColour(isCorrect);
         answerPanelScript.SetExplanationTextAndImage(faceArrayRand[currentQuestion]);
         //play sound and add reward if true
@@ -106,7 +106,6 @@ public class FaceCheck : MonoBehaviour
 
             Debug.Log("Correct");
         }
-        //if wrong show explanation
         else
         {
             //play normal audio (this script already attached to game manager
